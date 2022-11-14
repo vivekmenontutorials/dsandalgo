@@ -1,4 +1,4 @@
-package dsandalgo.BinarySearch;
+package dsandalgo.binarysearch;
 
 
 /**

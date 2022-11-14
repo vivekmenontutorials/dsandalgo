@@ -1,4 +1,4 @@
-package dsandalgo.BinarySearchTree;
+package dsandalgo.binarysearchtree;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

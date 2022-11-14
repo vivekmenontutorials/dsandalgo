@@ -1,4 +1,4 @@
-package dsandalgo.BinarySearchTree;
+package dsandalgo.binarysearchtree;
 
 
 public class BinaryTreeNode<T extends Comparable> {

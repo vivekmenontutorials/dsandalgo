@@ -1,5 +1,5 @@
-import dsandalgo.BinarySearchTree.BinarySearchTree;
-import dsandalgo.BinarySearchTree.BinarySearchTreeTreeImpl;
+import dsandalgo.binarysearchtree.BinarySearchTree;
+import dsandalgo.binarysearchtree.BinarySearchTreeTreeImpl;
 
 import java.util.List;
 
