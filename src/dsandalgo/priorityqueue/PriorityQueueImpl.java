@@ -1,6 +1,6 @@
 package dsandalgo.priorityqueue;
 
-public class PriorityQueueImpl implements Pqueue {
+public class PriorityQueueImpl implements PrQueue {
 
     private int capacity;
     private int maxIndex = 0;
@@ -10,7 +10,7 @@ public class PriorityQueueImpl implements Pqueue {
 
     public PriorityQueueImpl(int capacity) {
         this.capacity = capacity;
-        entries = new Entry[capacity];
+        entries = new Entry[capacity + 1];
     }
 
     public PriorityQueueImpl(int capacity, Entry[] items) {
@@ -37,6 +37,7 @@ public class PriorityQueueImpl implements Pqueue {
         }
     }
 
+    @Override
     public void insert(Entry e) {
         if (maxIndex == capacity) {
             throw new RuntimeException("Capacity exceeded");
@@ -102,10 +103,12 @@ public class PriorityQueueImpl implements Pqueue {
         entries[idx2] = temp;
     }
 
+    @Override
     public int getSize() {
         return maxIndex;
     }
 
+    @Override
     public Entry removeMin() {
         if (maxIndex == 0) {
             return null;
@@ -120,6 +123,7 @@ public class PriorityQueueImpl implements Pqueue {
     }
 
 
+    @Override
     public Entry getMin() {
         if (maxIndex == 0) {
             return null;
