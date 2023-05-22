@@ -1,11 +1,16 @@
-import dsandalgo.recursion.Fibonacci;
+import dsandalgo.recursion.Permutations46;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
-        Fibonacci fibo = new Fibonacci();
-        long fib = fibo.fibonacci(60);
-        System.out.println(fib);
+        Permutations46 perm = new Permutations46();
+        int[] nums = new int[]{1, 2, 3};
+        List<List<Integer>> ans=perm.permute(nums);
+
+        System.out.println(ans);
+
     }
 
 }
