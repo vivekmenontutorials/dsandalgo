@@ -1,15 +1,12 @@
-import dsandalgo.recursion.Letter17;
-import dsandalgo.recursion.Permutations46;
-import dsandalgo.recursion.Subsets78;
-
-import java.util.List;
+import dsandalgo.recursion.BinarySearch;
 
 public class Main {
     public static void main(String[] args) {
 
-        Letter17 ltd=new Letter17();
 
-        List<String> ans=ltd.letterCombinations("234");
+        int[] num = new int[]{-1, 0, 3, 5, 9, 12};
+        int target = 90;
+        int ans=BinarySearch.findIndex(num,target);
         System.out.println(ans);
 
     }
