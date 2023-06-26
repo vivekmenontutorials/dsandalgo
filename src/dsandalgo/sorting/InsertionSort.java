@@ -11,16 +11,18 @@ public class InsertionSort {
             for (int sortItemIdx = boundaryIndex; sortItemIdx > 0; sortItemIdx--) {
 
                 if (arr[sortItemIdx] < arr[sortItemIdx - 1]) {
-                    int temp = arr[sortItemIdx];
-                    arr[sortItemIdx] = arr[sortItemIdx - 1];
-                    arr[sortItemIdx - 1] = temp;
+                    swap(sortItemIdx - 1, sortItemIdx, arr);
                 } else {
                     break;
                 }
 
             }
-
         }
+    }
 
+    private static void swap(int i, int j, int[] arr) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }
